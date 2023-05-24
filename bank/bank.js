@@ -63,16 +63,7 @@ class poupanca extends Conta {
 
 }
 //SUB-CLASSE CORRENTE
-class corrente extends Conta {
-    constructor(numero,cpf,saldo,ativo,diaAniversarioConta){
-        super(numero,cpf,saldo,ativo);
-        this.diaAniversarioConta = diaAniversarioConta;
-    }
 
-    correcao(dia){
-        console.log("analisando correção...")
-    }
-}
 
 //SUB-CLASSE ESTUDANTIL
 class estudantil extends Conta{
@@ -131,48 +122,26 @@ do {
 
         }
     }
-    else if(opcao == "2"){
-        console.log("Testando a conta corrente ")
-        let numero = leia("Digite o número da conta : ")
-        let cpf = leia("Digite o cpf da conta : ")
-        let cc1 = new corrente(numero,cpf,0,false,3)
-        let op=""
-        for (let x=1;x<=10;x++){
-            valor = leia("Digite o valor:")
-            op = ("Digite D debito ou C crédito")
-            if (op == D){
-                cc1.debito=(valor)
-            }
-            else if (op == C){
-                cc1.credito(valor)
-            }
-            console.log("Saldo atual R$ : "+cc1.saldo )
-
-        }
-    }
-    else if(opcao == "3"){
-        console.log("Testando conta especial ")
-    }
     else if(opcao == "4"){
         console.log("Testando conta estudantil ")
-        let numero = leia("Digite o número da conta: ")
+        let numero = parseFloat =(leia("Digite o número da conta: "))
         let cpf = leia("Digite o cpf:")
         let cel1 = new estudantil(numero, cpf, 0, false, 5000)
         let op=""
         cel1.ativar(Conta)
         let valor=0
-        for (let x=1;x<=10;x++){
-            valor = leia("Digite o valor:")
-            op = leia("Digite D debito ou C crédito:")
+        for (let x=1;x<=5;x++){
+            valor = parseInt (leia("Digite o valor:"))
+            op = leia("Digite D debito ou C crédito: ")
             if (op == "D"){
-                cel1.debito=(valor)
+                cel1.debito(valor)
             }
             else if (op == "C"){
                 cel1.credito(valor)
             }
             console.log("Saldo atual R$ : "+cel1.saldo )
         }
-        valor = parseInt(leia("Usar limite ? valor :"))
+        valor = (leia("Usar limite ? valor :"))
         cel1.usarEstudantil(valor)
         console.log("Saldo final :" +cel1.saldo)
     }
@@ -182,8 +151,8 @@ do {
 }while(opcao !="5")
 console.log("Fim do programa, volte sempre ")
 
+/*
 
-/*CONTA
 let numero = parseFloat(leia("Digite o numero da conta: "))
 let cpf = leia ("Digite o cpf da conta: ")
 let c1 =  new Conta(numero,cpf,0,false)
