@@ -8,5 +8,10 @@
     background-color: black; 
 }
 .carousel-item{
-    height: 550px;
+    height: 450px;
+    margin-bottom: 100px;
+   
+}
+.nav-item{
+    color: blueviolet;
 }
