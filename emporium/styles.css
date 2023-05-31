@@ -1,0 +1,124 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(17, 14, 14);
+  }
+h1 , h2{
+    text-align: center;
+}
+p{
+text-align: center;
+}
+h2{
+    color: white;
+}
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+header {
+    background-color: rgb(17, 14, 14);
+    color: white;
+    padding: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: medium;
+    
+  }
+  
+  nav ul li a {
+    color: rgb(161, 37, 124);
+    text-decoration: none;
+  }
+  #banners-container {
+    padding: 100;
+  }
+  
+  .carousel-caption {
+    bottom: 5em;
+    padding: 1em;
+    left: 12%;
+    right: 12%;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 1.8em;
+  }
+  
+  @media(min-width: 768px) {
+    #slider .carousel-item,
+    #slider img {
+      height: 600px;
+    }
+  
+    .carousel-caption {
+      left: 23%;
+      right: 23%;
+    }
+  
+    .carousel-caption h5 {
+      font-size: 4em;
+    }
+  }
+.navbar{
+    display: flex;
+    justify-content: right;
+}
+
+.carousel-item{
+    height: 450px;
+    margin-bottom: 200px;   
+}
+main {
+    padding: 0px;
+    color: white;
+}
+section {
+    margin-bottom: 40px;
+}
+img{
+    justify-content: center;
+    flex-direction: row;
+    height: 350px;
+}
+h4{
+   text-align: center;
+   text-decoration: overline;
+    margin-right: 10px;
+
+}
+.card-title{
+    background-color: rgb(161, 37, 124);
+    text-align: center;
+}
+footer {
+    background-color: rgb(22, 19, 19);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  fieldset{
+    text-align: center;
+  }
+.card{
+    padding: 50px;
+    color: black;
+    background-color: black;
+    
+}
+.card-body{
+    background-color: black;
+}
+.card-text{
+    color: rgb(161, 37, 124);
+}
+
+

@@ -1,0 +1,25 @@
+{
+    "produtos": [
+    {
+    "id": 1,
+    "descricao": "Vinho Jacob´s Creek",
+    "estoque": 200,
+    "valor": "R$ 500",
+    "imagem": "img/pexels-photo-2912108.webp"
+    },
+    {
+    "id": 2,
+    "descricao": "Vinho Nobilo",
+    "estoque": 50,
+    "valor": "R$ 100",
+    "imagem" : "img/wine-bottle-white-lemons-162691.jpeg"
+    },
+    {
+    "id": 3,
+    "descricao": "Vinho Sauvignon Blanc",
+    "estoque": 100,
+    "valor": "R$ 70",
+    "imagem" : "img/pexels-photo-2308939.jpeg"
+    }
+    ]
+   }
