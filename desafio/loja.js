@@ -12,7 +12,7 @@ for(let i=0; i<codigo.length; i++){
 console.log("A digitação de valores")
 for(let i=0; i<codigo.length; i++){
     console.log(codigo[i]+'\t'+produtos[i])
-    preco[1] = leia("Digite o valor do produto")
+    preco[i] = leia("Digite o valor do produto")
 }
 
 console.log("COD\tPRODUTO\tPREÇO")
