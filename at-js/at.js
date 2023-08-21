@@ -14,7 +14,9 @@ for (let i = 0; i < codigo.length; i++) {
     }
 
 function adicionarCarrinho(codigos){
+ 
     let compras = codigo.indexOf(codigos);
+ 
       if (compras !== -1) {
         if (carrinho.length < servicosCarrinho){
             carrinho.push(compras);
@@ -24,6 +26,7 @@ function adicionarCarrinho(codigos){
           }
         } else {
           console.log("Código de serviço inválido.");
+       
         }
       }
 
