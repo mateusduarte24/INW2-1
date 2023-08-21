@@ -13,6 +13,7 @@ for (let i = 0; i < codigo.length; i++) {
     console.log(codigo[i]+"\t\t"+servico[i]+"\t"+valorUnitarioDoacao[i]);
     }
 
+//mateus duarte
 function adicionarCarrinho(codigos){
     let compras = codigo.indexOf(codigos);
       if (compras !== -1) {
@@ -34,7 +35,7 @@ function calcularValorTotal(){
         }
         console.log(`Total da doação é de: R$${total}`);
       }
-
+//mateus duarte
 function programaPrincipal() {
         while (true) {
           console.log("\nBEM-VINDO À TECFIT\n");
